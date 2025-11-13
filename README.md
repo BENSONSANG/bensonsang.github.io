@@ -1,27 +1,36 @@
-# Minimal Mistakes remote theme starter
+# 🧑‍💻 Benson Sang — Portfolio & CV Website
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+This repository contains my personal portfolio and CV website built using the **[Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)** and hosted on **GitHub Pages**.
 
-Contains basic configuration to get you a site with:
+## 🌐 Live Site
+👉 [https://bensonsang.github.io](https://bensonsang.github.io)
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+## 📂 Structure
+├── _config.yml # Site configuration
+├── index.md # Home page
+├── _pages/ # Custom pages (e.g., CV, Projects)
+│ ├── cv.md
+│ └── projects.md
+├── assets/images/ # Profile and media files
+└── README.md # Repo description
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## 🧠 About
+I’m Benson Kipsang Kiprotich, a Cybersecurity and Digital Forensics student passionate about:
+- Ethical hacking and penetration testing  
+- Secure web application development  
+- CTF challenges and forensic analysis  
+
+## ⚙️ Built With
+- **Jekyll** (via GitHub Pages)
+- **Minimal Mistakes** theme
+- **Markdown** for content editing
+
+## 🪄 How to Edit
+1. Edit Markdown files (`index.md`, `_pages/cv.md`, etc.) directly on GitHub.
+2. Commit and push changes — GitHub Pages rebuilds automatically.
+3. Wait 1–2 minutes, then refresh your live site.
 
 ---
 
-## Troubleshooting
-
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+📧 **Contact:** bensonsang128@gmail.com  
+💼 **LinkedIn:** [linkedin.com/in/bensonsang](https://linkedin.com/in/kkbenson)
