@@ -33,4 +33,4 @@ I’m Benson Kipsang Kiprotich, a Cybersecurity and Digital Forensics student pa
 ---
 
 📧 **Contact:** bensonsang128@gmail.com  
-💼 **LinkedIn:** [linkedin.com/in/bensonsang](https://linkedin.com/in/kkbenson)
+💼 **LinkedIn:** [linkedin.com/in/kkbenson](https://linkedin.com/in/kkbenson)
