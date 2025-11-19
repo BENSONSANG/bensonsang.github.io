@@ -1,8 +1,9 @@
 ---
-layout: home
 title: "Welcome"
+layout: home
+author_profile: true
 ---
-
+Welcome to my portfolio website.
 # Hi, I’m Benson 👋  
 Cybersecurity & Forensics student passionate about ethical hacking and secure systems.  
 
@@ -10,4 +11,4 @@ Cybersecurity & Forensics student passionate about ethical hacking and secure sy
 💻 I build: Web apps with HTML, CSS, PHP, and JavaScript  
 🏆 I do: CTF challenges and ethical hacking practice  
 
-👉 [View My CV](/cv/)
+[**Click here to view my CV →**](/cv/)
