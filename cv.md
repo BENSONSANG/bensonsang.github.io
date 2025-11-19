@@ -5,21 +5,13 @@ layout: single
 author_profile: true
 ---
 
-
-# Benson Sang
-
-**Email:** bensonsang128@gmail.com  
-**GitHub:** [@BENSONSANG](https://github.com/BENSONSANG)  
-**LinkedIn:** [linkedin.com/in/kkbenson](https://linkedin.com/in/kkbenson)
-
----
-
 ## 🎯 Summary
 Cybersecurity & Digital Forensics student skilled in ethical hacking, system analysis, and secure web app development. Interested in real-world security challenges and research.
 
 ---
 
 ## 💼 Experience
+
 **Freelance Web Developer** · 2024 — Present  
 - Built secure and responsive websites using HTML, CSS, and PHP.  
 - Created demo attendance system with QR code tracking for class projects.
