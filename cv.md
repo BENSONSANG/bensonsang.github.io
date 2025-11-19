@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae"
-layout: single
 permalink: /cv/
+layout: single
 author_profile: true
 ---
 
