@@ -3,9 +3,9 @@ description: "Cybersecurity & Digital Forensics Student"
 remote_theme: "mmistakes/minimal-mistakes"
 
 url: "https://bensonsang.github.io"
-baseurl: "" # leave empty if this is your main profile site
+baseurl: "" # leave empty for user/username.github.io
 
-# Optional profile info
+# Profile info
 author:
   name: "Benson K Kipsang"
   avatar: "/assets/images/profile.jpg"
@@ -18,10 +18,10 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/kkbenson"
 
-# Navigation
+# Navigation menu
 nav:
-  - title: "CV"
-    url: /cv/
+  - title: "Home"
+    url: /
   - title: "CV"
     url: /cv/
   - title: "Projects"
@@ -34,4 +34,4 @@ defaults:
       type: "pages"
     values:
       layout: "single"
-      author_profile: "true"
+      author_profile: true
