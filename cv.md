@@ -1,8 +1,10 @@
 ---
 title: "Curriculum Vitae"
-permalink: /cv/
 layout: single
+permalink: /cv/
+author_profile: true
 ---
+
 
 # Benson Sang
 
