@@ -1,0 +1,128 @@
+/* ===== Home page: dark + gold style =====
+   Paste at the BOTTOM of assets/css/main.scss (after the @import lines).
+   Delete your old .home-* and .home-background rules first so they don't clash. */
+
+$gold: #d4a82b;
+$gold-dark: #b98f1c;
+$bg: #0a0a0a;
+$card: rgba(22, 19, 13, 0.88);
+$line: rgba(212, 168, 43, 0.28);
+
+/* network-lines background (inline SVG, no extra file) */
+body.home-background {
+  background-color: $bg;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cg fill='none' stroke='%23d4a82b' stroke-opacity='.18' stroke-width='1'%3E%3Cpath d='M40 80L180 30L260 140L120 210Z M260 140L420 90L520 200L380 290Z M120 210L60 380L220 440L380 290 M220 440L400 520L540 430L520 200'/%3E%3C/g%3E%3Cg fill='%23d4a82b' fill-opacity='.45'%3E%3Ccircle cx='40' cy='80' r='2.5'/%3E%3Ccircle cx='180' cy='30' r='2.5'/%3E%3Ccircle cx='260' cy='140' r='2.5'/%3E%3Ccircle cx='120' cy='210' r='2.5'/%3E%3Ccircle cx='420' cy='90' r='2.5'/%3E%3Ccircle cx='520' cy='200' r='2.5'/%3E%3Ccircle cx='380' cy='290' r='2.5'/%3E%3Ccircle cx='60' cy='380' r='2.5'/%3E%3Ccircle cx='220' cy='440' r='2.5'/%3E%3Ccircle cx='400' cy='520' r='2.5'/%3E%3Ccircle cx='540' cy='430' r='2.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 600px 600px;
+  color: #e8e4da;
+}
+
+/* top bar */
+.home-background .masthead {
+  background: rgba(8, 8, 8, 0.96);
+  border-bottom: 1px solid $line;
+}
+.home-background .masthead a,
+.home-background .greedy-nav a { color: #e8e4da; }
+.home-background .greedy-nav { background: transparent; }
+.home-background .greedy-nav .visible-links a:hover { color: $gold; }
+.home-background .page__footer {
+  background: #080808;
+  color: #9a9484;
+  border-top: 1px solid $line;
+}
+.home-background .page__footer a { color: $gold; }
+
+/* use our own hero title instead of the theme's page title */
+.home-background .page__title { display: none; }
+.home-background #main { max-width: 1000px; }
+.home-background .page { width: 100%; float: none; padding: 0; }
+.home-background .page__content { font-size: 1rem; }
+
+.home-intro { padding: 2.5rem 0 3rem; text-align: center; }
+
+/* hero card */
+.home-hero {
+  background: $card;
+  border: 1px solid $line;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+}
+.home-title {
+  color: $gold;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+.home-eyebrow {
+  color: $gold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+.home-lead {
+  max-width: 640px;
+  margin: 0 auto 1.8rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #e8e4da;
+}
+.home-cta {
+  display: inline-block;
+  background: $gold;
+  color: #111 !important;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.home-cta:hover { background: $gold-dark; transform: translateY(-2px); }
+
+/* panels */
+.home-panel {
+  background: $card;
+  border: 1px solid $line;
+  border-radius: 10px;
+  padding: 2.2rem 1.8rem 2.4rem;
+  margin-bottom: 2rem;
+}
+.home-heading {
+  color: $gold;
+  font-size: 1.9rem;
+  margin: 0 0 1.6rem;
+  padding: 0;
+  border: 0;
+}
+
+/* highlight + stat cards */
+.home-highlights,
+.home-stats {
+  display: grid;
+  gap: 1.2rem;
+}
+.home-highlights { grid-template-columns: repeat(3, 1fr); }
+.home-stats { grid-template-columns: repeat(4, 1fr); }
+
+.home-highlight,
+.home-stat {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid $line;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+}
+.home-highlight__icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+.home-highlight h3 { color: $gold; font-size: 1.15rem; margin: 0 0 0.5rem; }
+.home-highlight p { margin: 0; color: #d8d3c6; line-height: 1.6; }
+
+.home-stat strong { display: block; color: $gold; font-size: 2rem; line-height: 1.2; }
+.home-stat span { color: #d8d3c6; font-size: 0.95rem; }
+
+@media (max-width: 800px) {
+  .home-highlights { grid-template-columns: 1fr; }
+  .home-stats { grid-template-columns: 1fr 1fr; }
+  .home-hero { padding: 2rem 1rem; }
+}
