@@ -1,6 +1,13 @@
-/* ===== Home page: dark + gold style =====
-   Paste at the BOTTOM of assets/css/main.scss (after the @import lines).
-   Delete your old .home-* and .home-background rules first so they don't clash. */
+---
+# Front matter (the two --- lines) is REQUIRED so Jekyll compiles this file
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/default"; // theme skin
+@import "minimal-mistakes";                // theme core
+
+/* ===== Home page: dark + gold style ===== */
 
 $gold: #d4a82b;
 $gold-dark: #b98f1c;

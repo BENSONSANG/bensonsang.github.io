@@ -1,37 +1,55 @@
 title: "Benson Kiprotich Kipsang — CV & Portfolio"
 description: "Cybersecurity & Digital Forensics Student"
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
 
 url: "https://bensonsang.github.io"
 baseurl: "" # leave empty for user/username.github.io
 
+# Plugins (jekyll-remote-theme is REQUIRED for remote_theme to load)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jemoji
+
+# Make Jekyll build the _pages folder (otherwise /about/, /categories/, /tags/ are 404)
+include:
+  - _pages
+
+paginate: 5
+paginate_path: /page:num/
+permalink: /:categories/:title/
+
 # Profile info
 author:
   name: "Benson K Kipsang"
-  avatar: "/assets/images/profile.jpg"
+  avatar: "/assets/images/bio-photo.jpg"
   bio: "Cybersecurity Student | Ethical Hacking Learner | Web Developer"
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/BENSONSANG"
     - label: "LinkedIn"
-      icon: "fab fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/kkbenson"
-
-# Navigation menu
-nav:
-  - title: "Home"
-    url: /
-  - title: "CV"
-    url: /cv/
-  - title: "Projects"
-    url: /projects/
 
 # Layout defaults
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: posts
     values:
-      layout: "single"
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
       author_profile: true
