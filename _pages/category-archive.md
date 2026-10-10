@@ -1,9 +1,9 @@
 ---
-title: "Post by Category"
-permalink: /category/
+title: "Posts by Category"
+permalink: /categories/
 layout: single
-author_profile: false
-classes: "home-background portfolio-page wide"
+author_profile: true
+classes: "home-background categories-page wide"
 ---
 
 <div class="home-intro">
