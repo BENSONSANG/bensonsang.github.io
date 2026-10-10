@@ -1,5 +1,5 @@
 ---
-title: "Portfolio"
+title: "Category"
 permalink: /portfolio/
 layout: single
 author_profile: false

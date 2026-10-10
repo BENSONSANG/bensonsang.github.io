@@ -1,0 +1,68 @@
+/* ===== Portfolio page extras =====
+   Paste BELOW the home-style block in assets/css/main.scss.
+   It reuses the colours and the .home-* classes from the home page. */
+
+.portfolio-page .pf-panel { text-align: left; }
+.portfolio-page .pf-panel .home-heading { text-align: center; }
+
+/* section buttons in the hero */
+.pf-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+}
+.pf-nav a {
+  border: 1px solid $gold;
+  color: $gold;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.pf-nav a:hover { background: $gold; color: #111; }
+
+/* project / lab cards */
+.pf-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid $line;
+  border-left: 4px solid $gold;
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+  color: #d8d3c6;
+}
+.pf-card h3 { color: $gold; font-size: 1.15rem; margin: 0 0 0.3rem; }
+.pf-card p { margin: 0; line-height: 1.65; }
+.pf-card .pf-tech {
+  color: #9fb8b4;
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* pills */
+.pf-group { color: $gold; font-weight: 700; font-size: 0.9rem; margin: 1rem 0 0.5rem; }
+.pf-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.pf-pill {
+  display: inline-block;
+  border: 1px solid $line;
+  background: rgba(212, 168, 43, 0.12);
+  color: $gold;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+a.pf-pill:hover { background: $gold; color: #111; }
+.pf-pill--cert { color: #f3e3b3; }
+
+/* auto-listed blog posts under each section */
+.pf-posts { list-style: none; margin: 1rem 0 0; padding: 0; }
+.pf-posts li { padding: 0.45rem 0; border-top: 1px solid $line; }
+.pf-posts a { color: $gold; font-weight: 700; }
+.pf-posts span { color: #9a9484; font-size: 0.8rem; margin-left: 0.6rem; }
+.pf-more { margin: 1.4rem 0 0; text-align: center; }
+.pf-more a, .home-lead a { color: $gold; }
