@@ -1,6 +1,6 @@
 ---
-title: "Category"
-permalink: /portfolio/
+title: "Post by Category"
+permalink: /category/
 layout: single
 author_profile: false
 classes: "home-background portfolio-page wide"
