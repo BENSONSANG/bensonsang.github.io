@@ -27,7 +27,7 @@ permalink: /:categories/:title/
 # Profile info
 author:
   name: "Benson K Kipsang"
-  avatar: "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/bio-photo.png"
   bio: "Cybersecurity Student | Ethical Hacking Learner | Web Developer"
   links:
     - label: "GitHub"
