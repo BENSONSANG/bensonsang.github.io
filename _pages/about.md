@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About"
-layout: default
+layout: single
 ---
 
 <!DOCTYPE html>
