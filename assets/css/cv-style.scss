@@ -1,0 +1,76 @@
+/* ===== CV page (dark and gold) =====
+   Paste BELOW the home-style block in assets/css/main.scss.
+   Uses the $gold, $card and $line variables defined there. */
+
+.cv-page .cv-panel { text-align: left; }
+.cv-page .cv-panel .home-heading { text-align: center; }
+.cv-page .home-lead a { color: $gold; }
+
+/* section buttons in the hero */
+.cv-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+}
+.cv-nav a {
+  border: 1px solid $gold;
+  color: $gold;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.cv-nav a:hover { background: $gold; color: #111; }
+
+.cv-text { color: #d8d3c6; font-size: 1.05rem; line-height: 1.8; margin: 0; }
+
+/* experience, education, project cards */
+.cv-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid $line;
+  border-left: 4px solid $gold;
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+  color: #d8d3c6;
+}
+.cv-card h3 { color: $gold; font-size: 1.2rem; margin: 0 0 0.3rem; }
+.cv-card p { margin: 0 0 0.4rem; line-height: 1.65; }
+.cv-card ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.cv-card li { margin-bottom: 0.3rem; line-height: 1.6; }
+.cv-card strong { color: #f3e3b3; }
+.cv-card .cv-meta {
+  color: #9fb8b4;
+  font-style: italic;
+  font-size: 0.88rem;
+}
+
+/* skills + certifications pills */
+.cv-group { color: $gold; font-weight: 700; font-size: 0.95rem; margin: 1.1rem 0 0.5rem; }
+.cv-group:first-of-type { margin-top: 0; }
+.cv-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.cv-pills span {
+  border: 1px solid $line;
+  background: rgba(212, 168, 43, 0.12);
+  color: $gold;
+  padding: 0.28rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+.cv-pills--cert span { color: #f3e3b3; font-size: 0.95rem; padding: 0.4rem 1.2rem; }
+
+/* print a clean white CV */
+@media print {
+  body.cv-page { background: #fff !important; color: #000; }
+  .cv-page .masthead, .cv-page .page__footer, .cv-nav, .cv-page .home-cta { display: none !important; }
+  .cv-page .home-hero, .cv-page .home-panel, .cv-page .cv-card {
+    background: #fff; border-color: #bbb; box-shadow: none;
+  }
+  .cv-page .home-title, .cv-page .home-heading, .cv-page .cv-card h3,
+  .cv-page .cv-group, .cv-page .home-eyebrow { color: #7a5c00; }
+  .cv-page .cv-text, .cv-page .cv-card, .cv-page .home-lead { color: #000; }
+  .cv-page .cv-pills span { color: #000; border-color: #999; background: #f3f3f3; }
+}
